@@ -12,11 +12,17 @@
     "lint": "run-s \"lint:*\"",
     "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache",
-    "format": "prettier --write --experimental-cli src/"
+    "format": "prettier --write --experimental-cli src/",
+    "server": "json-server --watch src/jobs.json --port 5000"
   },
   "dependencies": {
+    "@primeicons/vue": "^8.0.2",
+    "json-server": "^1.0.0-beta.15",
+    "pinia": "^4.1.0",
     "vue": "^3.5.42",
-    "vue-router": "^5.3.1"
+    "vue-router": "^5.3.1",
+    "vue-spinner": "^3.0.2",
+    "vue-toastification": "^2.0.0-rc.5"
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.3.3",
